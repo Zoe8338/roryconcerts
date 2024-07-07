@@ -1,102 +1,51 @@
 body {
+    background-color: #2C2F33;
+    color: #FFFFFF;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #ff0000;
-    color: white;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-header .logo h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-header .search-bar {
-    display: flex;
-    align-items: center;
-}
-
-header .search-bar input[type="text"] {
-    padding: 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 3px;
-}
-
-header .search-bar button {
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: #ddd;
-    border: none;
-    border-radius: 3px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-header .search-bar button:hover {
-    background-color: #ccc;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
+    background-color: #7289DA; /* Discord color */
     padding: 20px;
-    margin: 0;
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
-}
-
-.content {
-    max-width: 1000px;
-    margin: 20px auto;
-}
-
-.video-row {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.video-container {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 32%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 200px;
-    border: none;
-}
-
-.video-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-.video-info span {
-    display: flex;
     align-items: center;
+    border-radius: 0 0 10px 10px;
 }
 
-.video-info img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+header h1 {
+    margin: 0;
+}
+
+header input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.video-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.video-item iframe {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-size: 16px;
 }
