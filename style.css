@@ -3,40 +3,102 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    text-align: center;
 }
 
 header {
     background-color: #ff0000;
+    color: white;
     padding: 10px 0;
-    color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header .search-bar {
+    display: flex;
     align-items: center;
 }
 
-header .logo img {
-    width: 120px;
+header .search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+header .search-bar button:hover {
+    background-color: #ccc;
 }
 
 h1 {
+    text-align: center;
     color: #333;
     padding: 20px;
     margin: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.video-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .video-container {
-    margin: 20px auto;
-    padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
+    margin-bottom: 20px;
+    width: 32%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .video-container iframe {
     width: 100%;
-    height: 405px;
+    height: 200px;
     border: none;
+}
+
+.video-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.video-info span {
+    display: flex;
+    align-items: center;
+}
+
+.video-info img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }
